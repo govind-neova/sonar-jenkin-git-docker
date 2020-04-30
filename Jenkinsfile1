@@ -44,7 +44,7 @@ pipeline{
               steps{
                   script{
 		  sh 'cp -r ../sonar-git-jen-dock-kuber@2/target .'
-                  sh 'docker build . -t deekshithsn/devops-training:$Docker_tag'		 			    
+                  sh 'docker build . -t govindsaraf123/image:$Docker_tag'		 			    
 		  sh 'docker login -u govindsaraf123 -p 1iamot2aodiwbtl'
 		  sh 'docker push govindsaraf123/image:$Docker_tag'
 			
